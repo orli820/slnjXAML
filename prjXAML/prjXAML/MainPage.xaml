@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjXAML.MainPage">
+
+    <StackLayout Orientation="Vertical"
+                 Spacing="0">
+        <StackLayout Orientation="Horizontal"
+                     HeightRequest="1"
+                     VerticalOptions="FillAndExpand"
+                 Spacing="0">
+             <Label Text="A" 
+                    x:Name="lab1"
+               FontSize="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalTextAlignment="Center"    
+                HorizontalTextAlignment="Center"
+                BackgroundColor="#FFD9EC"></Label>
+        <Label Text="B" 
+                x:Name="lab2"
+               FontSize="50"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"
+               BackgroundColor="#FFFF6F"></Label>
+            <Label Text="C" 
+                    x:Name="lab3"
+               FontSize="50"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"
+               BackgroundColor="#B8B8DC"></Label>
+            <Label Text="D" 
+                    x:Name="lab4"
+               FontSize="50"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"
+               BackgroundColor="#DFFFDF"></Label>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HeightRequest="1"
+                 Spacing="0">
+            <Label Text="E"
+               FontSize="50"               
+               VerticalOptions="FillAndExpand"    
+               x:Name="lbhello"
+               BackgroundColor="#BEBEBE"></Label>
+        <Label Text="F"
+               FontSize="50"               
+               VerticalOptions="FillAndExpand"              
+               BackgroundColor="#BEBEBE"></Label>
+        <Label Text="G"
+               FontSize="50"               
+               VerticalOptions="FillAndExpand"              
+               BackgroundColor="#BEBEBE"></Label>
+        <Label Text="H"
+               FontSize="50"               
+               VerticalOptions="FillAndExpand"              
+               BackgroundColor="#BEBEBE"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

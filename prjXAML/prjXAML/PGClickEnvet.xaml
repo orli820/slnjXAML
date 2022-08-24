@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjXAML.PGClickEnvet">
+    <ContentPage.Content>
+        <StackLayout>
+        
+            <Label Text="二元一次方程式解答"
+                   FontSize="25"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Entry
+                x:Name="txtx"
+                
+                 FontSize="20"
+                HorizontalOptions="Center"
+            ></Entry>
+           <Label   
+           Text="X2+" 
+           HorizontalOptions="Center"
+           FontSize="20"
+            ></Label>
+            <Entry
+                x:Name="txty"
+            
+            FontSize="20"
+            HorizontalOptions="Center"
+            ></Entry>
+            <Label   
+           Text="X+1" 
+           HorizontalOptions="Center"
+           FontSize="20"
+            ></Label>
+            <Entry
+                x:Name="txtz"
+            
+            FontSize="20"
+            HorizontalOptions="Center"
+            ></Entry>
+            <Label   
+           Text="=0" 
+           HorizontalOptions="Center"
+           FontSize="20"
+            ></Label>
+            </StackLayout>
+            <Button
+                Text="確定"
+                x:Name="btnok"
+                Clicked="btnok_Clicked"
+                FontSize="20"
+                HorizontalOptions="Start"></Button>
+            <Label
+                Text=""
+                x:Name="ans"
+                ></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

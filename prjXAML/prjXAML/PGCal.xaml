@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjXAML.PGCal">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="計算機!"
+                   FontSize="30"
+                VerticalOptions="Start" 
+                   Padding="0,0,50,0"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text=""
+                   FontSize="70"
+                   Padding="0,0,50,0"
+                       x:Name="labTo"
+                VerticalOptions="Start" 
+                HorizontalOptions="End" />
+            <StackLayout VerticalOptions="FillAndExpand" >
+                <Grid VerticalOptions="FillAndExpand" x:Name="table">
+                    <Grid.RowDefinitions >
+                    <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+               
+                <Button
+                 Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="7"
+                x:Name="btn7"></Button>
+            <Button
+               Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="8"
+                x:Name="btn8"
+                Grid.Column="1"></Button>
+            <Button
+                Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="9"
+                x:Name="btn9"
+                Grid.Column="2"></Button>
+            <Button
+                Clicked="clickari"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="+"
+                x:Name="btnplu"
+                Grid.Column="3"></Button>
+            <Button
+               Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="4"
+                x:Name="btn4"
+                Grid.Column="0"
+                Grid.Row="1"></Button>
+            <Button
+                Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="5"
+                x:Name="btn5"
+                Grid.Column="1"
+                Grid.Row="1"></Button>
+            <Button
+                Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="6"
+                x:Name="btn6"
+                Grid.Column="2"
+                Grid.Row="1"></Button>
+            <Button
+                Clicked="clickari"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="-"
+                x:Name="btnmi"
+                Grid.Column="3"
+                Grid.Row="1"></Button>
+            <Button
+                 Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="1"
+                x:Name="btn1"
+                Grid.Column="0"
+                Grid.Row="2"></Button>
+            <Button
+                 Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="2"
+                x:Name="btn2"
+                Grid.Column="1"
+                Grid.Row="2"></Button>
+            <Button
+                 Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="3"
+                x:Name="btn3"
+                Grid.Column="2"
+                Grid.Row="2"></Button>
+            <Button
+                Clicked="clickari"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="*"
+                x:Name="btnmu"
+                Grid.Column="3"
+                Grid.Row="2"></Button>
+            <Button
+                Clicked="clickeq"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="="
+                x:Name="btneq"
+                Grid.Column="0"               
+                Grid.Row="3">   
+            </Button>
+            <Button
+                Clicked="clickbtn"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="0"
+                x:Name="btn0"
+                Grid.Column="2"                
+                Grid.Row="3">
+            </Button>
+                    <Button
+                Clicked="clickbac"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="ac"
+                x:Name="btnac"
+                Grid.Column="1"                
+                Grid.Row="3">
+                    </Button>
+                    <Button
+               Clicked="clickari"
+                BackgroundColor="#C7C7E2"
+                FontSize="30"
+                CornerRadius="30"
+                Text="/"
+                x:Name="btndiv"
+                Grid.Column="3"                
+                Grid.Row="3">
+            </Button>
+            </Grid>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
