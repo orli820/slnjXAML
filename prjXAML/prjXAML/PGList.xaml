@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjXAML.PGList">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="假單一覽表"
+                   FontSize="30"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView
+                x:Name="lv假單"
+                ItemSelected="lv假單_ItemSelected"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

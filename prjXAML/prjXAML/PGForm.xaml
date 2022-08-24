@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjXAML.Models.PGForm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="請假系統"
+                FontSize="40"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout Orientation="Horizontal">
+                <CheckBox 
+                    x:Name="ckb核可"
+                     VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="是否核可"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <StackLayout  >
+                    <Label Text="假單編號"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Entry 
+                x:Name="txtid"
+                FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" />
+            <Label Text="日期"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Entry 
+                x:Name="txtdate"
+                FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" />
+            <Label Text="申請人"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Entry 
+                x:Name="txtname"
+                FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" />
+            <Label Text="核可人"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Entry 
+                x:Name="txtmanager"
+                FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" />
+                <Label Text="理由"
+                   FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Entry 
+                x:Name="txtreason"
+                FontSize="20"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" >
+            <ImageButton
+                
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+               x:Name="btnfirst"
+                Clicked="btnfirst_Clicked"
+                Source="hamster"
+                 WidthRequest="30"
+               />
+               <ImageButton
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+                x:Name="btnpre"
+                Clicked="btpre_Clicked"
+                Source="previous"
+                 WidthRequest="30"
+               />
+               <ImageButton
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+                x:Name="btnnext"
+               Clicked="btnnext_Clicked"
+                Source="next"
+                 WidthRequest="30"
+               />
+                <ImageButton
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+                x:Name="btnlast"
+               Clicked="btnlast_Clicked"
+                Source="hamsters"
+                 WidthRequest="30"
+               />
+               <ImageButton
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+                x:Name="btnsearch"
+               Clicked="btnsearch_Clicked"
+                Source="search"
+                 WidthRequest="30"
+                   />
+                    <ImageButton
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#00000000"
+                x:Name="btnlist"
+               Clicked="btnlist_Clicked"
+                Source="paragraph"
+                 WidthRequest="30"
+                        />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

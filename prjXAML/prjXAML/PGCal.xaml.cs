@@ -16,32 +16,22 @@ namespace prjXAML
         {
             InitializeComponent();
         }
-        //string str上一組 = "";
-        //string str這一組 = "";
-        //string str符號 = "";
-
-
+        
         string num當下, num紀錄符號 ,num暫存;
         string num上次 = "";
-        bool flag = false;
-        bool flag1 = false;
+        bool flag點符號 = false;
+        bool flag點數字 = false;
         private void clickbtn(object sender, EventArgs e)
         {
             Button b = sender as Button;
-
-            //num上次 += b.Text;
-            if (flag == true)
+            flag點數字 = true;           
+            if (flag點符號 == true)
             {
-
                 labTo.Text = "";
-                flag = false;
-
+                flag點符號 = false;
             }
-
             labTo.Text += b.Text;
             num當下 = labTo.Text;
-            
-            
         }
        //int count=0;
         private void clickari(object sender, EventArgs e)
@@ -55,15 +45,15 @@ namespace prjXAML
             //str符號+= bu.Text;
             Button bu = sender as Button;
             num紀錄符號 = bu.Text;
-            flag = true;
-            flag1 = false;
+            flag點符號 = true;
+            //flag1 = false;
             num上次 = labTo.Text;
 
-            if (flag == true)
+            if (flag點數字 == true)
             {
-
                 labTo.Text = method2();
                 num暫存 = labTo.Text;
+                flag點數字 = false;
             }
             //if (count % 2 == 0)
             //{
@@ -100,7 +90,12 @@ namespace prjXAML
             {
                 num上次 = labTo.Text;
                 labTo.Text = method1();
-            
+            }
+            else if (flag點符號 == true)
+            {
+                num暫存 = labTo.Text;
+               
+                labTo.Text = method2();
             }
             else
                 flag2 = true;
@@ -131,11 +126,11 @@ namespace prjXAML
         }
         string method2()
         {
-            
-            var p = num暫存 + num紀錄符號 + num當下;           
+
+            var p = num暫存 + num紀錄符號 + num當下;
             DataTable dt = new DataTable();
-            var a = dt.Compute(p, "");                   
-            return a.ToString();          
+            var a = dt.Compute(p, "");
+            return a.ToString();
         }
         private void clickbac(object sender, EventArgs e)
         {
